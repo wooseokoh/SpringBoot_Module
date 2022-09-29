@@ -19,14 +19,14 @@ public class SwaggerConfiguration {
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo())
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("studio.thinkground.aroundhub"))
+                .apis(RequestHandlerSelectors.basePackage("com.example.sb101.controller"))
                 .paths(PathSelectors.any())
                 .build();
     }
 
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
-                .title("Around Hub Open API Test with Swagger")
+                .title("MapStruct Open API Test with Swagger")
                 .description("설명 부분")
                 .version("1.0.0")
                 .build();
