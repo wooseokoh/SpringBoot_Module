@@ -7,7 +7,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-import com.example.sb101.web.dto.request.response.ContactRespDto;
+import com.example.sb101.web.dto.response.ContactRespDto;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

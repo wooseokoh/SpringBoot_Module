@@ -8,7 +8,7 @@ import lombok.Setter;
 @Setter
 @Getter
 @NoArgsConstructor
-public class ContactDto {
+public class ContactReqDto {
     private Long id;
     private String firstName;
     private String lastName;

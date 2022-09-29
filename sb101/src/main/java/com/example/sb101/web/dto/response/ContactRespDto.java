@@ -1,4 +1,4 @@
-package com.example.sb101.web.dto.request.response;
+package com.example.sb101.web.dto.response;
 
 import lombok.Builder;
 import lombok.Getter;
