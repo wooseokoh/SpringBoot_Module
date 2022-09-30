@@ -3,7 +3,6 @@ package com.example.sb101.service;
 import com.example.sb101.domain.Contact;
 import com.example.sb101.domain.ContactRepository;
 import com.example.sb101.mapper.ContactMapper;
-import com.example.sb101.web.dto.request.ContactReqDto;
 import com.example.sb101.web.dto.response.ContactRespDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -18,8 +17,8 @@ public class ContactService {
 
     private final ContactRepository contactRepository;
 
-    public ContactRespDto saveContact(ContactReqDto dto) {
-        return contactRepository.save(contactMapper.toEntity(dto)).toDto();
+    public Contact saveContact(ContactRespDto dto) {
+        return contactRepository.save(contactMapper.toEntity(dto));
     }
 
     public ContactRespDto getContactById(Long id) {
