@@ -35,10 +35,9 @@ public class EmployeeService {
     }
 
     public EmployeeDetailsDto getEmployeeDetailsById(Long id) {
-        Optional<Employee> emp = employeeRepository.findById(id);
-        if(emp.isPresent()) {
-            return employeeDetailsMapper.toEmployeeDetailsDTO(emp.get(), emp.get().getDepartment());
-        }
-        return new EmployeeDetailsDto();
+        return employeeRepository.findById(id).
+                map(emp->{
+                    return employeeDetailsMapper.toEmployeeDetailsDTO(emp, emp.getDepartment());
+                }).orElse(new EmployeeDetailsDto());
     }
 }
