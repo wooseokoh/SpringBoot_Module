@@ -2,12 +2,17 @@ package com.example.sb101.mapper;
 
 import com.example.sb101.domain.Order;
 import com.example.sb101.web.dto.OrderDto;
-import org.mapstruct.Mapper;
-import org.mapstruct.Mapping;
-import org.mapstruct.Named;
+import org.mapstruct.*;
 
 @Mapper(componentModel = "spring")
 public interface OrderMapper {
+
+    @BeforeMapping
+    default void validate(OrderDto orderDto) {
+        if(orderDto.getQuantity()==0) {
+            orderDto.setQuantity(1);
+        }
+    }
 
     @Mapping(source="orderAmount",target="amount")
     @Mapping(source="orderDate",target="date" ,dateFormat = "yyyy-MMM-dd")
@@ -19,6 +24,16 @@ public interface OrderMapper {
     @Mapping(source="date",target="orderDate" ,dateFormat = "yyyy-MMM-dd")
     @Mapping(source="status",target="orderStatus",qualifiedByName="checkOrderStatusInString")
     OrderDto toDTO(Order order);
+
+    @AfterMapping
+    default void calculateSum(Order order,@MappingTarget OrderDto orderDto) {
+        float sum = 0;
+        if(order.getQuantity()!=0 && order.getAmount() !=0) {
+            sum = sum + (order.getQuantity()*order.getAmount());
+            orderDto.setSum(sum);
+        }
+
+    }
 
     @Named("checkOrderStatus")
     default boolean checkOrderStatus(String orderStatus) {

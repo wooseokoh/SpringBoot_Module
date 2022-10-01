@@ -14,4 +14,8 @@ public class OrderDto {
     private String orderDate;
 
     private String orderStatus;
+
+    private int quantity;
+
+    private float sum;
 }
