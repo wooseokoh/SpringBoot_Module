@@ -10,10 +10,12 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 import lombok.Data;
+import lombok.ToString;
 
 @Data
 @Entity
 @Table(name="order_details")
+@ToString
 public class Order {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -28,4 +30,7 @@ public class Order {
 
     @Column(name="order_date")
     private LocalDate date;
+
+    @Column(name="status")
+    private boolean status;
 }

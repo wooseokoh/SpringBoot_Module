@@ -13,5 +13,5 @@ public class OrderDto {
 
     private String orderDate;
 
-
+    private String orderStatus;
 }
