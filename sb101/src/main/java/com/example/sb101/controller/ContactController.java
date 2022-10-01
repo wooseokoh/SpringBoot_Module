@@ -4,6 +4,7 @@ import com.example.sb101.domain.Contact;
 import com.example.sb101.service.ContactService;
 import com.example.sb101.web.dto.response.CMRespDto;
 import com.example.sb101.web.dto.response.ContactRespDto;
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -16,9 +17,10 @@ import org.springframework.web.bind.annotation.RequestBody;
 import java.util.List;
 
 @Controller
+@RequiredArgsConstructor
 public class ContactController {
-    @Autowired
-    ContactService contactService;
+
+    private final ContactService contactService;
 
     @PostMapping("/contact")
     public ResponseEntity<?> saveContact(@RequestBody ContactRespDto contactDTO) {
