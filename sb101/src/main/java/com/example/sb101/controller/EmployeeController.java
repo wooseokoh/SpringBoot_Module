@@ -2,6 +2,7 @@ package com.example.sb101.controller;
 
 import com.example.sb101.domain.Employee;
 import com.example.sb101.service.EmployeeService;
+import com.example.sb101.web.dto.EmployeeDetailsDto;
 import com.example.sb101.web.dto.EmployeeDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
@@ -27,4 +28,8 @@ public class EmployeeController {
         return ResponseEntity.ok(employeeService.getEmployeeById(id));
     }
 
+    @GetMapping("/employee-details/{id}")
+    public ResponseEntity<EmployeeDetailsDto> getEmployeeDetailsById(@PathVariable Long id) {
+        return ResponseEntity.ok(employeeService.getEmployeeDetailsById(id));
+    }
 }
