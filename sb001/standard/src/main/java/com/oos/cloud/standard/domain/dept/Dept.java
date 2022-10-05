@@ -1,4 +1,4 @@
-package com.oos.cloud.standard.domain;
+package com.oos.cloud.standard.domain.dept;
 
 import lombok.Builder;
 import lombok.Getter;
