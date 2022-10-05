@@ -63,7 +63,7 @@ public class DeptServiceImpl implements DeptService {
 
     @Override
     @Transactional
-    public void deptDelte(Integer deptno) throws BusinessException {
+    public void deptDelete(Integer deptno) throws BusinessException {
         deptRepository.deleteById(deptno);
     }
 }

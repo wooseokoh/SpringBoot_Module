@@ -18,7 +18,7 @@ import java.util.List;
 
 //@DataJpaTest // DB 와 관련된 컴포넌트만 메모리에 로딩
 @Slf4j
-@ActiveProfiles({"dev", "db-h2"})
+@ActiveProfiles({"dev", "db-maria"})
 @SpringBootTest
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 public class TestDeptRepository {
@@ -38,6 +38,9 @@ public class TestDeptRepository {
         deptRepository.saveAll(deptList);
 
         Assertions.assertThat(deptRepository.findById(10).isPresent()).isEqualTo(true);
+        Assertions.assertThat(deptRepository.findById(20).isPresent()).isEqualTo(true);
+        Assertions.assertThat(deptRepository.findById(30).isPresent()).isEqualTo(true);
+        Assertions.assertThat(deptRepository.findById(40).isPresent()).isEqualTo(true);
     }
 
     @Test

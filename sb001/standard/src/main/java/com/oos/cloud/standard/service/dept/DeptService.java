@@ -11,5 +11,5 @@ public interface DeptService {
     public ResponseDeptDto deptDetail(Integer deptno) throws BusinessException;
     public ResponseDeptDto deptInsert(Dept dept) throws BusinessException;
     public ResponseDeptDto deptUpdate(Dept dept) throws BusinessException;
-    public void deptDelte(Integer deptno) throws BusinessException;
+    public void deptDelete(Integer deptno) throws BusinessException;
 }

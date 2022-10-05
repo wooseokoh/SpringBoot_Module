@@ -69,7 +69,7 @@ public class TestDeptService {
     public void A003_DEPT_TABLE_삭제(){
         Integer [] deptnos = {10,20,30,40};
         for(Integer deptno : deptnos){
-            deptService.deptDelte(deptno);
+            deptService.deptDelete(deptno);
             boolean isPresent = deptRepository.findById(deptno).isPresent();
             Assertions.assertThat(false).isEqualTo(isPresent);
         }

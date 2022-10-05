@@ -1,6 +1,6 @@
 #FileLock
-#Tue Oct 04 16:22:02 KST 2022
-server=192.168.56.1\:53383
-hostName=DESKTOP-52TIP9N
+#Thu Oct 06 01:04:28 KST 2022
+server=172.30.48.1\:54542
+hostName=DESKTOP-52TIP9N.mshome.net
 method=file
-id=183a1df66a95334adf99eb571c4a24e184b44cca86a
+id=183a8e41f1e203be563591aa4837c453f401ce45e8e
