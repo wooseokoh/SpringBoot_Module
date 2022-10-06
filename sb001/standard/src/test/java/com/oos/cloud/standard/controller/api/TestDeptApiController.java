@@ -54,6 +54,7 @@ public class TestDeptApiController {
         Gson gson = new Gson();
 
         ResponseDeptDto responseDeptDto = gson.fromJson(content, ResponseDeptDto.class);
+        log.debug(responseDeptDto.getMessage());
         Assertions.assertThat(responseDeptDto.getDeptno()).isEqualTo(10);
     }
 
@@ -88,7 +89,7 @@ public class TestDeptApiController {
 
         List<ResponseDeptDto> responseDeptDtoList = gson.fromJson(content, new TypeToken<List<ResponseDeptDto>>(){}.getType());
         responseDeptDtoList.forEach(dept -> {
-//            log.debug(dept.toString());
+            log.debug(dept.toString());
         });
     }
 
