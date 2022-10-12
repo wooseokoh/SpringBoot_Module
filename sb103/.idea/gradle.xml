@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="GradleMigrationSettings" migrationVersion="1" />
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
@@ -10,9 +9,11 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/api" />
-            <option value="$PROJECT_DIR$/service" />
-            <option value="$PROJECT_DIR$/service/product01" />
-            <option value="$PROJECT_DIR$/util" />
+            <option value="$PROJECT_DIR$/services" />
+            <option value="$PROJECT_DIR$/services/composite" />
+            <option value="$PROJECT_DIR$/services/product" />
+            <option value="$PROJECT_DIR$/services/recommend" />
+            <option value="$PROJECT_DIR$/services/review" />
           </set>
         </option>
       </GradleProjectSettings>
@@ -22,15 +23,6 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/api" />
-          </set>
-        </option>
-      </GradleProjectSettings>
-      <GradleProjectSettings>
-        <option name="distributionType" value="DEFAULT_WRAPPED" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/util" />
-        <option name="modules">
-          <set>
-            <option value="$PROJECT_DIR$/util" />
           </set>
         </option>
       </GradleProjectSettings>
