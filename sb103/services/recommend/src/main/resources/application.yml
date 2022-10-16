@@ -11,5 +11,5 @@ spring:
 logging:
   level:
     root: INFO
-    com.cloud.product: DEBUG
+    com.cloud.recommend: DEBUG
     org.springframework.data.mongodb.core.MongoTemplate: DEBUG
