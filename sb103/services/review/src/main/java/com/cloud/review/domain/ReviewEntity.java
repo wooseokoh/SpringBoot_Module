@@ -3,13 +3,8 @@ package com.cloud.review.domain;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import org.springframework.data.annotation.Version;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Index;
-import javax.persistence.Table;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Getter
 @Setter

@@ -98,7 +98,7 @@ public class TestProductRepository {
             entity2.setProductName("n2");
             repository.save(entity2);
         }catch (OptimisticLockingFailureException e){
-            e.printStackTrace();
+//            e.printStackTrace();
         }
 
         ProductEntity updateEntity = repository.findById(savedEntity.getId()).get();

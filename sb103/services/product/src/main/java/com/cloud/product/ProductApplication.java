@@ -24,14 +24,14 @@ public class ProductApplication {
     }
 
     @Autowired
-    MongoOperations mongoTemplete;
+    MongoOperations mongoTemplate;
 
     @EventListener(ContextRefreshedEvent.class)
     public void initIndicesAfterStartup(){
-        MappingContext<? extends MongoPersistentEntity<?>, MongoPersistentProperty> mappingContext = mongoTemplete.getConverter().getMappingContext();
+        MappingContext<? extends MongoPersistentEntity<?>, MongoPersistentProperty> mappingContext = mongoTemplate.getConverter().getMappingContext();
         IndexResolver resolver = new MongoPersistentEntityIndexResolver(mappingContext);
 
-        IndexOperations indexOps = mongoTemplete.indexOps(ProductEntity.class);
+        IndexOperations indexOps = mongoTemplate.indexOps(ProductEntity.class);
         resolver.resolveIndexFor(ProductEntity.class).forEach(e -> indexOps.ensureIndex(e));
     }
 }

@@ -12,7 +12,8 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
-import static org.springframework.test.util.AssertionErrors.fail;
+import static org.junit.jupiter.api.Assertions.fail;
+
 
 @ExtendWith(SpringExtension.class)
 @DataJpaTest
@@ -56,8 +57,7 @@ public class TestReviewRepository {
         savedEntity.setAuthor("a2");
         repository.save(savedEntity);
         ReviewEntity foundEntity = repository.findById(savedEntity.getId()).get();
-        System.out.println(foundEntity.getVersion());
-//        Assertions.assertEquals(1,(long)foundEntity.getVersion());
+        Assertions.assertEquals(1,(long)foundEntity.getVersion());
         Assertions.assertEquals("a2", foundEntity.getAuthor());
     }
 
@@ -99,10 +99,11 @@ public class TestReviewRepository {
             repository.save(entity2);
             fail("Expected an OptimisticLockingFailureException");
         }catch (OptimisticLockingFailureException e){
+            e.printStackTrace();
         }
 
         ReviewEntity updateEntity = repository.findById(savedEntity.getId()).get();
-//        Assertions.assertEquals(1, (int)updateEntity.getVersion());
+        Assertions.assertEquals(1, (int)updateEntity.getVersion());
         Assertions.assertEquals("a1", updateEntity.getAuthor());
     }
 
