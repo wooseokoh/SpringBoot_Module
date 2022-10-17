@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b469a9a4-a5c2-4a61-b962-314937173e69" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/sb104/.gradle/7.4/checksums/checksums.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/.gradle/7.4/checksums/md5-checksums.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/.gradle/7.4/checksums/sha1-checksums.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/.gradle/7.4/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/.gradle/7.4/dependencies-accessors/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/.gradle/7.4/executionHistory/executionHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/.gradle/7.4/executionHistory/executionHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/.gradle/7.4/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/.gradle/7.4/fileHashes/fileHashes.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/.gradle/7.4/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/.gradle/7.4/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/.gradle/7.4/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/.gradle/file-system.probe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/.gradle/vcs-1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/api/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/api/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/api/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/api/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/api/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/api/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/api/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/api/src/main/java/com/cloud/api/controller/CompositeControllerInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/api/src/main/java/com/cloud/api/controller/ProductControllerInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/api/src/main/java/com/cloud/api/controller/RecommendControllerInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/api/src/main/java/com/cloud/api/controller/ReviewControllerInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/api/src/main/java/com/cloud/api/dto/Composite.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/api/src/main/java/com/cloud/api/dto/HttpErrorInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/api/src/main/java/com/cloud/api/dto/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/api/src/main/java/com/cloud/api/dto/Recommend.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/api/src/main/java/com/cloud/api/dto/Review.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/api/src/main/java/com/cloud/api/exception/InvalidInputException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/api/src/main/java/com/cloud/api/exception/NotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/api/src/main/java/com/cloud/api/exception/RestControllerExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/api/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/api/src/test/java/com/cloud/api/ApiApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/run/docker-compose/000.compile_java.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/run/docker-compose/010.build_docker_compose.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/run/docker-compose/020.up_docker_compose.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/run/docker-compose/021.ps_docker_compose.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/run/docker-compose/022.log_docker_compose.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/run/docker-compose/023.restart_docker_container.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/run/docker-compose/024.test)crul.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/run/docker-compose/030.down_docker_composite.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/run/docker-compose/040.remove_docker_images.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/run/docker-compose/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/run/docker/001.make_docker_image.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/run/docker/002.run_docker_container.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/run/docker/003.test.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/run/docker/004.delete_docker_container.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/run/local/001.env_set.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/run/local/002.start.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/run/local/003.test.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/run/local/004.down.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/services/composite/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/services/composite/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/services/composite/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/services/composite/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/services/composite/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/services/composite/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/services/composite/src/main/java/com/cloud/composite/CompositeApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/services/composite/src/main/java/com/cloud/composite/controller/CompositeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/services/composite/src/main/java/com/cloud/composite/controller/IntegrateModule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/services/composite/src/main/resources/application-docker.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/services/composite/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/services/composite/src/test/java/com/cloud/composite/CompositeApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/services/composite/src/test/java/com/cloud/composite/controller/TestCompositeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/services/product/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/services/product/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/services/product/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/services/product/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/services/product/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/services/product/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/services/product/src/main/java/com/cloud/product/ProductApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/services/product/src/main/java/com/cloud/product/controller/ProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/services/product/src/main/java/com/cloud/product/controller/ProductMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/services/product/src/main/java/com/cloud/product/domain/ProductEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/services/product/src/main/java/com/cloud/product/domain/ProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/services/product/src/main/resources/application-docker.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/services/product/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/services/product/src/test/java/com/cloud/product/controller/TestProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/services/product/src/test/java/com/cloud/product/controller/TestProductMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/services/product/src/test/java/com/cloud/product/domain/TestProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/services/recommend/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/services/recommend/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/services/recommend/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/services/recommend/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/services/recommend/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/services/recommend/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/services/recommend/src/main/java/com/cloud/recommend/RecommendApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/services/recommend/src/main/java/com/cloud/recommend/controller/RecommendController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/services/recommend/src/main/java/com/cloud/recommend/controller/RecommendMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/services/recommend/src/main/java/com/cloud/recommend/domain/RecommendEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/services/recommend/src/main/java/com/cloud/recommend/domain/RecommendRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/services/recommend/src/main/resources/application-docker.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/services/recommend/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/services/recommend/src/test/java/com/cloud/recommend/controller/MapperTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/services/recommend/src/test/java/com/cloud/recommend/controller/TestRecommendController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/services/recommend/src/test/java/com/cloud/recommend/domain/TestRecommendRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/services/review/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/services/review/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/services/review/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/services/review/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/services/review/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/services/review/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/services/review/src/main/java/com/cloud/review/ReviewApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/services/review/src/main/java/com/cloud/review/controller/ReviewController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/services/review/src/main/java/com/cloud/review/controller/ReviewMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/services/review/src/main/java/com/cloud/review/domain/ReviewEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/services/review/src/main/java/com/cloud/review/domain/ReviewRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/services/review/src/main/resources/application-docker.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/services/review/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/services/review/src/test/java/com/cloud/review/controller/MapperTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/services/review/src/test/java/com/cloud/review/controller/TestReviewController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/services/review/src/test/java/com/cloud/review/domain/TestReviewRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/services/src/main/java/org/example/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb104/src/main/java/org/cloudmicro/Main.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2GGf4GLZYmQvOkL3cQx7KKtCDL0" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/sb104" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\springboot" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b469a9a4-a5c2-4a61-b962-314937173e69" name="Changes" comment="" />
+      <created>1666019648665</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1666019648665</updated>
+      <workItem from="1666019650397" duration="64000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
