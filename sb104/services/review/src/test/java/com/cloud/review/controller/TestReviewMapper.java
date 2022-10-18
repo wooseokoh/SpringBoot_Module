@@ -1,6 +1,5 @@
 package com.cloud.review.controller;
 
-import com.cloud.api.dto.Recommend;
 import com.cloud.api.dto.Review;
 import com.cloud.review.domain.ReviewEntity;
 import org.junit.jupiter.api.Assertions;
@@ -10,7 +9,7 @@ import org.mapstruct.factory.Mappers;
 import java.util.Collections;
 import java.util.List;
 
-public class MapperTests {
+public class TestReviewMapper {
     private ReviewMapper mapper = Mappers.getMapper(ReviewMapper.class);
 
     @Test
@@ -18,7 +17,7 @@ public class MapperTests {
 
         Assertions.assertNotNull(mapper);
 
-        Review api = new Review(1,1,"author","subject","content");
+        Review api = new Review(1,1,"author","subject","content","serviceAddress");
 
         ReviewEntity entity = mapper.dtoToEntity(api);
 
@@ -35,6 +34,7 @@ public class MapperTests {
         Assertions.assertEquals(api.getAuthor(),api2.getAuthor());
         Assertions.assertEquals(api.getSubject(),api2.getSubject());
         Assertions.assertEquals(api.getContent(),api2.getContent());
+        Assertions.assertNull(api2.getServiceAddress());
     }
 
     @Test
@@ -42,7 +42,7 @@ public class MapperTests {
 
         Assertions.assertNotNull(mapper);
 
-        Review api = new Review(1,1,"author","subject","content");
+        Review api = new Review(1,1,"author","subject","content","serviceAddress");
         List<Review> apiList = Collections.singletonList(api);
         List<ReviewEntity> entityList = mapper.dtoListToEntityList(apiList);
         Assertions.assertEquals(apiList.size(), entityList.size());
@@ -64,5 +64,6 @@ public class MapperTests {
         Assertions.assertEquals(api.getAuthor(),api2.getAuthor());
         Assertions.assertEquals(api.getSubject(),api2.getSubject());
         Assertions.assertEquals(api.getContent(),api2.getContent());
+        Assertions.assertNull(api2.getServiceAddress());
     }
 }

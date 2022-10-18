@@ -46,7 +46,7 @@ public class TestReviewController {
     }
 
     private WebTestClient.BodyContentSpec addReviews(String productId, int reviewId, HttpStatus expectedStatus){
-        Review review = new Review(Integer.parseInt(productId), reviewId, "Author" + reviewId, "Subject" + reviewId, "Content" + reviewId);
+        Review review = new Review(Integer.parseInt(productId), reviewId, "Author" + reviewId, "Subject" + reviewId, "Content" + reviewId, null);
         WebTestClient.BodyContentSpec result =
                 client.post().uri("/review")
                         .body(Mono.just(review), Review.class)

@@ -43,7 +43,7 @@ public class TestProductController {
     }
 
     private WebTestClient.BodyContentSpec addProduct(int productId, HttpStatus expectedStatus){
-        Product product = new Product(productId, productId +"_name", productId +"_info");
+        Product product = new Product(productId, productId +"_name", productId +"_info", null);
         WebTestClient.BodyContentSpec result =
                 client.post().uri("/product")
                         .body(Mono.just(product), Product.class)

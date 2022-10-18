@@ -39,9 +39,9 @@ public class TestCompositeController {
 
     @BeforeEach
     public void setUp(){
-        when(integrateModule.getProduct(PRODUCT_ID_OK)).thenReturn(new Product(PRODUCT_ID_OK, "name", null));
-        when(integrateModule.getRecommends(PRODUCT_ID_OK)).thenReturn(singletonList( new Recommend(PRODUCT_ID_OK, 1, "author", "content")));
-        when(integrateModule.getReviews(PRODUCT_ID_OK)).thenReturn((singletonList( new Review(PRODUCT_ID_OK, 1,"author", "subject","content"))));
+        when(integrateModule.getProduct(PRODUCT_ID_OK)).thenReturn(new Product(PRODUCT_ID_OK, "name", null, null));
+        when(integrateModule.getRecommends(PRODUCT_ID_OK)).thenReturn(singletonList( new Recommend(PRODUCT_ID_OK, 1, "author", "content", null)));
+        when(integrateModule.getReviews(PRODUCT_ID_OK)).thenReturn((singletonList( new Review(PRODUCT_ID_OK, 1,"author", "subject","content", null))));
 
         // 실제 테스트 되는 것은 RestControllerExceptionHandler @RestControllerAdvice 입니다.
         when(integrateModule.getProduct(PRODUCT_ID_NOT_FOUND)).thenThrow(new NotFoundException("No productId" + PRODUCT_ID_NOT_FOUND));

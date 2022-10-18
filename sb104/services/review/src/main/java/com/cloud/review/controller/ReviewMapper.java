@@ -11,7 +11,9 @@ import java.util.List;
 
 @Mapper(componentModel = "spring")
 public interface ReviewMapper {
-    @Mappings({})
+    @Mappings({
+            @Mapping(target ="serviceAddress", ignore = true)
+    })
     Review entityToDto(ReviewEntity entity);
 
     @Mappings({

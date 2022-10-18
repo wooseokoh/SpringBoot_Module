@@ -1,13 +1,12 @@
 package com.cloud.recommend.controller;
 
-import com.cloud.api.dto.Product;
 import com.cloud.api.dto.Recommend;
 import com.cloud.recommend.domain.RecommendEntity;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.mapstruct.factory.Mappers;
 
-public class MapperTests {
+public class TestRecommendMapper {
     private RecommendMapper mapper = Mappers.getMapper(RecommendMapper.class);
 
     @Test
@@ -15,7 +14,7 @@ public class MapperTests {
 
         Assertions.assertNotNull(mapper);
 
-        Recommend dto = new Recommend(1,1,"a","a");
+        Recommend dto = new Recommend(1,1,"a","a","serviceAddress");
 
         RecommendEntity entity = mapper.dtoToEntity(dto);
 
@@ -30,5 +29,6 @@ public class MapperTests {
         Assertions.assertEquals(dto.getRecommendId(),dto2.getRecommendId());
         Assertions.assertEquals(dto.getAuthor(),dto2.getAuthor());
         Assertions.assertEquals(dto.getContent(),dto2.getContent());
+        Assertions.assertNull(dto2.getServiceAddress());
     }
 }
