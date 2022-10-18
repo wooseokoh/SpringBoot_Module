@@ -4,6 +4,7 @@ import com.cloud.api.controller.ProductControllerInterface;
 import com.cloud.api.dto.Product;
 import com.cloud.api.exception.InvalidInputException;
 import com.cloud.api.exception.NotFoundException;
+import com.cloud.api.util.ServiceUtil;
 import com.cloud.product.domain.ProductEntity;
 import com.cloud.product.domain.ProductRepository;
 import lombok.AllArgsConstructor;
@@ -18,6 +19,7 @@ public class ProductController implements ProductControllerInterface {
 
     private final ProductRepository repository;
     private final ProductMapper mapper;
+    private final ServiceUtil serviceUtil;
 
     @Override
     public Product createProduct(Product body) {
@@ -40,6 +42,7 @@ public class ProductController implements ProductControllerInterface {
         ProductEntity entity = repository.findByProductId(productId)
                 .orElseThrow(() -> new NotFoundException("No productId: " + productId));
         Product product = mapper.entityToDto(entity);
+        product.setServiceAddress(serviceUtil.getServiceAddress());
         log.debug("getProduct: {}", product.getProductId());
         return product;
     }

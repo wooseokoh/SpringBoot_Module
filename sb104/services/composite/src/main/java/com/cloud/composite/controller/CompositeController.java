@@ -3,6 +3,7 @@ package com.cloud.composite.controller;
 import com.cloud.api.controller.CompositeControllerInterface;
 import com.cloud.api.dto.*;
 import com.cloud.api.exception.NotFoundException;
+import com.cloud.api.util.ServiceUtil;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.RestController;
@@ -15,6 +16,7 @@ import java.util.List;
 public class CompositeController implements CompositeControllerInterface {
 
     private final IntegrateModule integration;
+    private final ServiceUtil serviceUtil;
 
     @Override
     public void createComposite(Composite body) {
@@ -49,7 +51,11 @@ public class CompositeController implements CompositeControllerInterface {
         List<Recommend> recommendList = integration.getRecommends(productId);
         List<Review> reviewList = integration.getReviews(productId);
 
-        ServiceAddresses serviceAddresses = new ServiceAddresses();
+        String productAddress = product.getServiceAddress();
+        String recommendAddress = (recommendList != null && recommendList.size() > 0) ? recommendList.get(0).getServiceAddress() : "";
+        String reviewAddress = (reviewList != null && reviewList.size() > 0) ? reviewList.get(0).getServiceAddress() : "";
+
+        ServiceAddresses serviceAddresses = new ServiceAddresses(serviceUtil.getServiceAddress(), productAddress, recommendAddress, reviewAddress);
         return new Composite(product.getProductId(), product.getProductName(), recommendList, reviewList, serviceAddresses);
     }
 

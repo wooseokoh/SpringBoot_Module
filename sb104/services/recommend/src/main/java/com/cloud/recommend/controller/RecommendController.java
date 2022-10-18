@@ -3,6 +3,7 @@ package com.cloud.recommend.controller;
 import com.cloud.api.controller.RecommendControllerInterface;
 import com.cloud.api.dto.Recommend;
 import com.cloud.api.exception.InvalidInputException;
+import com.cloud.api.util.ServiceUtil;
 import com.cloud.recommend.domain.RecommendEntity;
 import com.cloud.recommend.domain.RecommendRepository;
 import lombok.AllArgsConstructor;
@@ -19,6 +20,7 @@ public class RecommendController implements RecommendControllerInterface {
 
     private final RecommendRepository repository;
     private final RecommendMapper mapper;
+    private final ServiceUtil serviceUtil;
 
     @Override
     public Recommend createRecommend(Recommend body) {
@@ -37,6 +39,9 @@ public class RecommendController implements RecommendControllerInterface {
 
         List<RecommendEntity> entityList = repository.findByProductId(productId);
         List<Recommend> list = mapper.entityListToApiList(entityList);
+        if(list != null && list.size() > 0){
+            list.get(0).setServiceAddress(serviceUtil.getServiceAddress());
+        }
         log.debug("getRecommends: response size: {}", list.size());
         return list;
 

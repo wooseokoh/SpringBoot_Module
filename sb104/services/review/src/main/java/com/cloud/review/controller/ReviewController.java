@@ -4,6 +4,7 @@ package com.cloud.review.controller;
 import com.cloud.api.controller.ReviewControllerInterface;
 import com.cloud.api.dto.Review;
 import com.cloud.api.exception.InvalidInputException;
+import com.cloud.api.util.ServiceUtil;
 import com.cloud.review.domain.ReviewEntity;
 import com.cloud.review.domain.ReviewRepository;
 import lombok.AllArgsConstructor;
@@ -21,6 +22,7 @@ public class ReviewController implements ReviewControllerInterface {
 
     private final ReviewRepository repository;
     private final ReviewMapper mapper;
+    private final ServiceUtil serviceUtil;
 
     @Override
     public Review createReview(Review body) {
@@ -40,6 +42,11 @@ public class ReviewController implements ReviewControllerInterface {
 
         List<ReviewEntity> entityList = repository.findByProductId(productId);
         List<Review> list = mapper.entityListToApiList(entityList);
+
+        if(list != null && list.size() > 0){
+            list.get(0).setServiceAddress(serviceUtil.getServiceAddress());
+        }
+
         log.debug("getReviews: response size: {}", list.size());
         return list;
     }
