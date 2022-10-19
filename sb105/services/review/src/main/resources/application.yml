@@ -1,0 +1,31 @@
+server:
+  port: 7003
+  error:
+    include-message: always
+spring:
+  application:
+    name: review
+  jpa:
+    hibernate:
+      ddl-auto: update
+  datasource:
+    url: jdbc:mysql://localhost/review-db
+    username: user01
+    password: user01
+    hikari:
+      initializationFailTimeout: 60000
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+    initalalInstanceInfoReplicationIntervalSeconds : 5
+    registryFetchIntervalSeconds: 5
+  instance:
+    lease-renewal-interval-in-seconds: 5
+    lease-expiration-duration-in-seconds: 5
+logging:
+  level:
+    root: INFO
+    com.cloud.review: DEBUG
+    org.hibernate.SQL: DEBUG
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
