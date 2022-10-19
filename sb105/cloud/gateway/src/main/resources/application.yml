@@ -1,0 +1,33 @@
+server:
+  port: 8080
+  ssl:
+    key-store-type: PKS12
+    key-store: classpath:keystore/gateway-local.p12
+    key-store-password: password
+    key-alias: localhost
+
+spring:
+  application:
+    name: gateway
+  cloud:
+    gateway:
+      routes:
+        - id: composite
+          uri: lb://composite
+          predicates:
+            - Paht=/composite/**
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+      initialInstanceInReplicationIntervalSeconds: 5
+      registryFetchIntervalSeconds: 5
+    instance:
+      lease-renewal-interval-in-seconds: 5
+      lease-expiration-duration-in-seconds: 5
+
+logging:
+  level:
+    root: INFO
+    com.cloud.gateway: DEBUG
