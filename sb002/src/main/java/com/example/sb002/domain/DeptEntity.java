@@ -13,7 +13,7 @@ import javax.persistence.Table;
 @NoArgsConstructor
 @Entity
 @Table(name="DEPT")
-public class Dept {
+public class DeptEntity {
     @Id
     Integer deptNo;
     String dName;
