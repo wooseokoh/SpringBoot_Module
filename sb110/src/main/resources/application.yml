@@ -1,4 +1,12 @@
+logging:
+  level:
+    root: info
+    com.batch.sb110: debug
+
 spring:
+  batch:
+    job:
+      names: ${job.name:NONE}
   jpa:
     hibernate:
       ddl-auto: update
@@ -9,5 +17,5 @@ spring:
         dialect: org.hibernate.dialect.MySQL5InnoDBDialect
   datasource:
     url: jdbc:mysql://127.0.0.1:3306/study?serverTimezone=Asia/Seoul
-    username: wsoh
-    password: wsoh
+    username: batch
+    password: 1234
