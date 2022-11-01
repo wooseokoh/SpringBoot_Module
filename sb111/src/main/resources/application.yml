@@ -2,11 +2,14 @@ spring:
   kafka:
     consumer:
       bootstrap-servers: localhost:9092
-      group-id: myGroup
-      auto-offset-reset: earliest
+      group-id: myGroup # 컨슈머 그룹명
+      auto-offset-reset: earliest # 컨슈머 그룹에서 소비할 offect 정보가 없을때 처리 방법. - latest : 가장 최근 메시지로, - earliest : 가장 오래된 메시지로, - none : offset 정보가 없으면 Exception 발생시
+      # 카프카에서 메세지를 받아올 때, 역직렬화 설정. String이면 StringDeserializer, JSON형식을 받아오면 JsonDeserializer.
+      # kafkaTemplate의 key-value를 말함.
       key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
       value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
     producer:
       bootstrap-servers: localhost:9092
+      # 카프카에 데이터를 보낼 때 하는 직렬화 설정.
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
       value-serializer: org.apache.kafka.common.serialization.StringSerializer
