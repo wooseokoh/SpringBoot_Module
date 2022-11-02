@@ -7,9 +7,16 @@ spring:
       # 카프카에서 메세지를 받아올 때, 역직렬화 설정. String이면 StringDeserializer, JSON형식을 받아오면 JsonDeserializer.
       # kafkaTemplate의 key-value를 말함.
       key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
-      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+#      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      properties:
+        spring:
+          json:
+            trusted:
+            packages: *
     producer:
       bootstrap-servers: localhost:9092
       # 카프카에 데이터를 보낼 때 하는 직렬화 설정.
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
-      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+#      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
