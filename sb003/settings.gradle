@@ -1,2 +1,3 @@
 include (':wikiprodcuer')
+include (':dbconsumer')
 
