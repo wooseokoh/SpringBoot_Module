@@ -6,3 +6,18 @@ spring:
       auto-offset-reset: earliest
       key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
       value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+    topic:
+      name: wikimedia_recentchange
+  datasource:
+    url: jdbc:mysql://localhost:3306/wikimedia
+    username: root
+    password: root1234
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+        show_sql: true
+        use_sql_comments: true
+        format_sql: ture
+    hibernate:
+      ddl-auto: update
